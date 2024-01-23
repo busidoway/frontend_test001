@@ -19,7 +19,6 @@ a, a:hover, a:focus, a:active {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
-    /* width: 100%; */
     padding-left: 60px;
     padding-right: 60px;
 }
@@ -63,9 +62,15 @@ a, a:hover, a:focus, a:active {
 }
 
 .header__lang {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 22px 15px;
 }
 
@@ -87,9 +92,15 @@ a, a:hover, a:focus, a:active {
     width: 26px;
     height: 24px;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .site_info {
@@ -123,19 +134,26 @@ a, a:hover, a:focus, a:active {
 }
 
 .header_service {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    transform: translate(0px, 35px);
+    -webkit-transform: translate(0px, 35px);
+        -ms-transform: translate(0px, 35px);
+            transform: translate(0px, 35px);
 }
 
 .header_service_item {
     background-color: #fff;
     border-radius: 20px;
     padding: 22px 20px 30px 20px;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 40px;
     grid-template-columns: 1fr 40px;
-    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+            box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .header_service_item  i {
@@ -166,7 +184,9 @@ a, a:hover, a:focus, a:active {
 }
 
 .products_list {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 44px 0;
@@ -176,7 +196,9 @@ a, a:hover, a:focus, a:active {
     background-color: #E9F6FF;
     border-radius: 30px;
     padding: 12px 0px 0 20px;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 246px;
     grid-template-columns: 1fr 246px;
 }
 
@@ -200,8 +222,12 @@ a, a:hover, a:focus, a:active {
 }
 
 .products_item_image {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 .features_content {
@@ -209,7 +235,9 @@ a, a:hover, a:focus, a:active {
 }
 
 .features {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
@@ -227,7 +255,9 @@ a, a:hover, a:focus, a:active {
 }
 
 .features_right {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 15px 1fr;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
@@ -235,7 +265,8 @@ a, a:hover, a:focus, a:active {
 .features_item {
     padding: 17px 24px;
     border-radius: 20px;
-    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+            box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .features_icon {
@@ -280,19 +311,24 @@ a, a:hover, a:focus, a:active {
         padding-right: 30px;
     }
     .header_service {
+        -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-        transform: none;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
         padding-bottom: 32px;
     }
     .products_content {
         padding: 40px 0 16px 0;
     }
     .products_list {
+        -ms-grid-columns: 1fr;
         grid-template-columns: repeat(1, 1fr);
         gap: 16px;
         padding: 24px 0;
     }
     .features {
+        -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -324,8 +360,12 @@ a, a:hover, a:focus, a:active {
     }
     .site_info__button {
         padding: 10px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .header_service {
         gap: 15px;
@@ -333,18 +373,29 @@ a, a:hover, a:focus, a:active {
     }
     .header_service_item {
         padding: 0 18px 18px 18px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .header_service_text {
-        order: 1;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
         padding: 0;
         font-size: 14px;
         line-height: 19.6px;
     }
     .header_service_icon {
-        order: 0;
-        transform: translate(0, -8px);
+        -webkit-box-ordinal-group: 1;
+            -ms-flex-order: 0;
+                order: 0;
+        -webkit-transform: translate(0, -8px);
+            -ms-transform: translate(0, -8px);
+                transform: translate(0, -8px);
     }
     .products_item {
         padding: 0;
@@ -372,22 +423,29 @@ a, a:hover, a:focus, a:active {
     }
     .features_button {
         padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 
 @media (max-width: 480px) {
     .products_item {
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 375px) {
     .header_service {
+        -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     }
     .features_right {
+        -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     }
     .features_item {
